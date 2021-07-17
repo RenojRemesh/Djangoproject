@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+Welcome! {{user.Firstname}}
+<form action = "{%url 'app:userhome' user.id%}" method = "post">
+	{%csrf_token%}
+<table>
+	<tr>
+		<td>
+			<label>
+				name
+			</label>
+	</td>
+	<td>
+		{[user.Firstname]}
+	</td>
+    </tr>
+    <tr>
+    	<td>
+    		age
+    	</td>
+    	<td>
+    	{{user.Age}}
+    	</td>
+    </tr>  	
+</table>
+</form>
+</body>
+</html>

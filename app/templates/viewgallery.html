@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple HTML Photo Gallery</title>
+</head>
+<body>
+{% for p in form %}
+			<tr>
+				<td><img src="{{ p.Photo.url }}" style="width:200px;height:200px"></td>
+				<td></td>
+			</tr>
+{% endfor %}
+
+</body>
+
+</html>
+
